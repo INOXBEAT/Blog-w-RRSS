@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Profile Clone</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playwrite+ES+Deco:wght@100..400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            font-family: "Poppins";
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            color: #262626;
+            padding: 10px 20px;
+            border-bottom: 1px solid #dbdbdb;
+        }
+
+        .navbar-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-left img {
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .navbar-left h1 {
+            font-family: 'Playwrite ES Deco', sans-serif;
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .navbar-center input {
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: 1px solid #dbdbdb;
+        }
+
+        .navbar-right a {
+            color: #262626;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+
+        .profile-container {
+            max-width: 935px;
+            margin: 20px auto;
+            padding: 0 20px;
+            background-color: #fff;
+            border: 1px solid #dbdbdb;
+            border-radius: 5px;
+        }
+
+        .profile-header {
+            display: flex;
+            padding: 20px;
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 30px;
+        }
+
+        .profile-info {
+            flex: 1;
+        }
+
+        .profile-info h2 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        .profile-stats {
+            display: flex;
+            margin: 10px 0;
+        }
+
+        .profile-stats span {
+            margin-right: 20px;
+        }
+
+        .profile-stats strong {
+            font-weight: bold;
+        }
+
+        .profile-posts {
+            padding: 20px;
+        }
+
+        .post-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+        }
+
+        .post-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="navbar-left">
+                <img src="images/instagram_icon.png" alt="Instagram_icon">
+                <h1>Instagram</h1>
+            </div>
+            <div class="navbar-center">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="navbar-right">
+                <a href="#">Home</a>
+                <a href="#">Profile</a>
+                <a href="#">Messages</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="profile-container">
+
+        <div class="profile-header">
+            <img src="images/profile_photo.jpg" alt="Profile Photo" class="profile-photo">
+            <div class="profile-info">
+                <h2>Jane's Fashion</h2>
+                <button>Follow</button>
+                <div class="profile-stats">
+                    <span><strong>120</strong> posts</span>
+                    <span><strong>500</strong> followers</span>
+                    <span><strong>300</strong> following</span>
+                </div>
+                <p>Fashion Designer, Photographer, Traveler</p>
+            </div>
+        </div>
+
+        <div class="profile-posts">
+            <div class="post-grid">
+                <img src="images/post1.jpg" alt="Post 1">
+                <img src="images/post2.jpg" alt="Post 2">
+                <img src="images/post3.jpg" alt="Post 3">
+                <img src="images/post4.jpg" alt="Post 4">
+                <img src="images/post5.jpg" alt="Post 5">
+                <img src="images/post6.jpg" alt="Post 6">
+                <img src="images/post7.jpg" alt="Post 7">
+                <img src="images/post8.jpg" alt="Post 8">
+                <img src="images/post9.jpg" alt="Post 9">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
